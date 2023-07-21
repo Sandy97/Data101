@@ -1,0 +1,264 @@
+object Form5: TForm5
+  Left = 0
+  Top = 0
+  Caption = 'mainF'
+  ClientHeight = 553
+  ClientWidth = 420
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object tbcMain: TTabControl
+    Align = Client
+    Size.Width = 420.000000000000000000
+    Size.Height = 553.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 1
+    TabOrder = 0
+    TabPosition = None
+    Sizes = (
+      420s
+      553s
+      420s
+      553s)
+    object tbItem: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tbItem'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object ToolBar2: TToolBar
+        Size.Width = 420.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object sbBack: TSpeedButton
+          Action = ctaList
+          Align = Left
+          Enabled = True
+          ImageIndex = -1
+          Size.Width = 80.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'arrowlefttoolbutton'
+        end
+        object sbSave: TSpeedButton
+          Action = acSave
+          Align = Right
+          Enabled = True
+          ImageIndex = -1
+          Position.X = 260.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'composetoolbutton'
+        end
+        object sbDelete: TSpeedButton
+          Action = acDelete
+          Align = Right
+          Enabled = True
+          ImageIndex = -1
+          Position.X = 340.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'trashtoolbutton'
+        end
+        object Label2: TLabel
+          Align = Client
+          StyledSettings = [Family, FontColor]
+          Size.Width = 180.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.HorzAlign = Center
+          Text = #1056#1077#1076#1072#1082#1090#1086#1088
+          TabOrder = 3
+        end
+      end
+      object edTitle: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Anchors = [akLeft, akTop, akRight]
+        TabOrder = 2
+        Position.X = 24.000000000000000000
+        Position.Y = 81.000000000000000000
+        Size.Width = 368.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Label3: TLabel
+        AutoSize = True
+        StyledSettings = [Family, Style, FontColor]
+        Position.X = 24.000000000000000000
+        Position.Y = 56.000000000000000000
+        Size.Width = 97.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 16.000000000000000000
+        Text = #1047#1072#1075#1086#1083#1086#1074#1086#1082
+        TabOrder = 4
+      end
+      object Label4: TLabel
+        AutoSize = True
+        StyledSettings = [Family, Style, FontColor]
+        Position.X = 24.000000000000000000
+        Position.Y = 136.000000000000000000
+        Size.Width = 97.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 16.000000000000000000
+        Text = #1050#1072#1090#1077#1075#1086#1088#1080#1103' '
+        TabOrder = 3
+      end
+      object edCategory: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Anchors = [akLeft, akTop, akRight]
+        TabOrder = 1
+        Position.X = 24.000000000000000000
+        Position.Y = 161.000000000000000000
+        Size.Width = 368.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object CheckBox1: TCheckBox
+        Anchors = [akRight]
+        Position.X = 280.000000000000000000
+        Position.Y = 167.386749267578100000
+        Size.Width = 112.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        Text = #1042#1099#1087#1086#1083#1085#1077#1085#1086
+      end
+    end
+    object tbList: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'tbList'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object ToolBar1: TToolBar
+        Size.Width = 420.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object sbAdd: TSpeedButton
+          Action = acAdd
+          Align = Left
+          Enabled = True
+          ImageIndex = -1
+          Size.Width = 80.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'addtoolbutton'
+        end
+        object Label1: TLabel
+          Align = Client
+          StyledSettings = [Family, FontColor]
+          Margins.Right = 20.000000000000000000
+          Size.Width = 320.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.HorzAlign = Center
+          Text = #1057#1087#1080#1089#1086#1082' '#1076#1077#1083' ToDo'
+          TabOrder = 1
+        end
+      end
+      object lvwToDOs: TListView
+        ItemAppearanceClassName = 'TDynamicAppearance'
+        ItemEditAppearanceClassName = 'TDynamicAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        Align = Client
+        Size.Width = 420.000000000000000000
+        Size.Height = 513.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+          item
+            AppearanceObjectName = 'Title'
+            AppearanceClassName = 'TTextObjectAppearance'
+            Appearance.Font.StyleExt = {00070000000000000004000000}
+            Appearance.TextAlign = Leading
+            Appearance.Width = 487.000000000000000000
+            Appearance.Height = 25.000000000000000000
+          end
+          item
+            AppearanceObjectName = 'Category'
+            AppearanceClassName = 'TTextObjectAppearance'
+            Appearance.TextAlign = Leading
+            Appearance.Width = 519.000000000000000000
+            Appearance.Height = 17.000000000000000000
+            Appearance.PlaceOffset.Y = 24.000000000000000000
+          end
+          item
+            AppearanceObjectName = 'more'
+            AppearanceClassName = 'TAccessoryObjectAppearance'
+            Appearance.Width = 32.000000000000000000
+            Appearance.Height = 44.000000000000000000
+            Appearance.Align = Trailing
+          end
+          item
+            AppearanceObjectName = 'GlyphButton4'
+            AppearanceClassName = 'TGlyphButtonObjectAppearance'
+            Appearance.Width = 25.000000000000000000
+            Appearance.Height = 25.000000000000000000
+            Appearance.PlaceOffset.X = 518.000000000000000000
+          end>
+        ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
+          item
+            AppearanceObjectName = 'Text1'
+            AppearanceClassName = 'TTextObjectAppearance'
+          end>
+        OnItemClick = lvwToDOsItemClick
+        OnDeleteItem = lvwToDOsDeleteItem
+      end
+    end
+  end
+  object ActionList1: TActionList
+    Left = 24
+    Top = 216
+    object ctaList: TChangeTabAction
+      Category = 'Tab'
+      Tab = tbList
+    end
+    object ctaItem: TChangeTabAction
+      Category = 'Tab'
+      Tab = tbItem
+    end
+    object acAdd: TAction
+      Category = 'data'
+      Text = 'acAdd'
+      OnExecute = acAddExecute
+    end
+    object acDelete: TAction
+      Category = 'data'
+      Text = 'acDelete'
+      OnExecute = acDeleteExecute
+    end
+    object acSave: TAction
+      Category = 'data'
+      Text = 'acSave'
+      OnExecute = acSaveExecute
+    end
+  end
+end
